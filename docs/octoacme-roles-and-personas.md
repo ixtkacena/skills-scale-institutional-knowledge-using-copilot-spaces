@@ -75,6 +75,31 @@ Project Managers coordinate delivery activities, manage schedules, risks, and co
 
 ---
 
+Project Sponsor
+
+    Responsibilities: Set strategic vision, approve budgets, remove major roadblocks.
+    Interacts with: Project Manager, key stakeholders
+
+Business Analyst
+
+    Responsibilities: Requirements gathering, process mapping, stakeholder interviews.
+    Interacts with: Product Owner, Project Manager, development team
+
+QA Lead
+
+    Responsibilities: Define testing strategies, oversee test plans and execution.
+    Interacts with: Developers, Release Manager
+
+Change Manager
+
+    Responsibilities: Lead change management process, communicate changes, manage resistance.
+    Interacts with: All impacted teams and stakeholders
+
+Communications Lead
+
+    Responsibilities: Craft and deliver project updates, facilitate meetings, manage documentation.
+    Interacts with: Project Manager, leadership team
+
 ## How these personas are used in the exercise
 - Use these persona definitions to frame scenarios and sample interactions in the Skills Exercise.
 - Each persona can be used as a persona prompt for Copilot Spaces to shape role-specific guidance.
