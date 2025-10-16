@@ -1,7 +1,116 @@
-OctoAcme follows a lightweight, iterative project lifecycle designed to help cross-functional teams deliver customer value quickly and safely. Projects begin with a focused Initiation stage—capture a one-pager that defines the problem, measurable success metrics, stakeholders, and a high-level timeline—then move through Planning (prioritized backlog, estimates, Definition of Done, and a release plan), Execution (sprints, reviews, and demos), Release (staged deployments and smoke checks), and finally Close & Retrospective to document learnings and next steps. Core artifacts include the Project Charter/One-pager, Roadmap/Release Plan, Sprint Backlog, Acceptance Criteria and Definition of Done, Risk Register, and Retrospective notes.
+# OctoAcme Project Lifecycle & Delivery Process
 
-Day-to-day work uses a project board as the team’s single source of truth (Backlog → Ready → In Progress → In Review → QA → Done) and a disciplined pull request workflow. Backlog items follow a consistent template (title, description, acceptance criteria, priority, estimate, owner) and planning is timeboxed to the sprint length with capacity considered. Pull requests should be small when possible (guideline: ≤ 400 lines), include the linked issue and acceptance criteria, run CI (tests, linting, security scans) before requesting review, and require an approval before merging.
+## Project Lifecycle
 
-Roles and responsibilities are clearly defined: Project Managers coordinate delivery, schedules, risks, and communications; Product Managers own outcomes, prioritization and success metrics; Developers build and test features; and QA validates acceptance. Risk and dependency management is explicit—teams maintain a Risk Register (ID, impact, likelihood, owner, mitigation) reviewed in weekly syncs and escalate per documented paths when needed. Communication cadence includes daily standups, weekly delivery syncs, PM↔PdM weekly alignment, monthly stakeholder updates, scheduled demos, and templates for weekly status and incident communications.
+OctoAcme follows a lightweight, iterative project lifecycle designed to help cross-functional teams deliver customer value quickly and safely. The lifecycle consists of the following stages:
 
-Quality assurance blends automated and manual checks to keep releases safe and observable. Teams write unit and integration tests, run end-to-end smoke tests for critical flows, include security scanning in CI, and perform manual QA for acceptance when necessary. Pre-release gates require passing CI and security scans, drafted release notes, a rollback/mitigation plan, and prepared smoke tests; deployments favor automated pipelines and include post-deploy verifications and stakeholder announcements.
+1. **Initiation**
+    - Capture a one-pager that defines:
+        - The problem
+        - Measurable success metrics
+        - Stakeholders
+        - High-level timeline
+2. **Planning**
+    - Develop:
+        - Prioritized backlog
+        - Estimates
+        - Definition of Done
+        - Release plan
+3. **Execution**
+    - Conduct:
+        - Sprints
+        - Reviews
+        - Demos
+4. **Release**
+    - Perform:
+        - Staged deployments
+        - Smoke checks
+5. **Close & Retrospective**
+    - Document learnings and next steps
+
+**Core Artifacts:**
+- Project Charter / One-pager
+- Roadmap / Release Plan
+- Sprint Backlog
+- Acceptance Criteria and Definition of Done
+- Risk Register
+- Retrospective notes
+
+## Day-to-Day Workflow
+
+- The project board is the team’s single source of truth.
+- **Board States:**
+
+  | State         | Description                |
+  |---------------|----------------------------|
+  | Backlog       | Unprioritized work         |
+  | Ready         | Prioritized, ready to start|
+  | In Progress   | Actively being worked on   |
+  | In Review     | Awaiting code review       |
+  | QA            | Undergoing QA validation   |
+  | Done          | Completed and accepted     |
+
+- **Backlog items** follow a consistent template:
+    - Title
+    - Description
+    - Acceptance criteria
+    - Priority
+    - Estimate
+    - Owner
+- Planning is timeboxed to the sprint length, with capacity considered.
+- **Pull request workflow:**
+    - Keep PRs small when possible (guideline: ≤ 400 lines)
+    - Include the linked issue and acceptance criteria
+    - Run CI (tests, linting, security scans) before requesting review
+    - Require approval before merging
+
+## Roles and Responsibilities
+
+- **Project Managers (PM):**
+    - Coordinate delivery, schedules, risks, and communications
+- **Product Managers (PdM):**
+    - Own outcomes, prioritization, and success metrics
+- **Developers:**
+    - Build and test features
+- **QA:**
+    - Validate acceptance
+
+## Risk and Dependency Management
+
+- Teams maintain a **Risk Register** reviewed in weekly syncs.
+- Escalate risks per documented paths when needed.
+
+**Risk Register Fields:**
+
+| ID | Impact | Likelihood | Owner | Mitigation |
+|----|--------|------------|-------|------------|
+|    |        |            |       |            |
+
+## Communication Cadence
+
+- Daily standups
+- Weekly delivery syncs
+- PM ↔ PdM weekly alignment
+- Monthly stakeholder updates
+- Scheduled demos
+- Templates for weekly status and incident communications
+
+## Quality Assurance
+
+Quality assurance blends automated and manual checks to keep releases safe and observable.
+
+- Teams write unit and integration tests
+- Run end-to-end smoke tests for critical flows
+- Include security scanning in CI
+- Perform manual QA for acceptance when necessary
+
+**Pre-release gates require:**
+- Passing CI and security scans
+- Drafted release notes
+- A rollback/mitigation plan
+- Prepared smoke tests
+
+**Deployments:**
+- Favor automated pipelines
+- Include post-deploy verifications
+- Stakeholder announcements
